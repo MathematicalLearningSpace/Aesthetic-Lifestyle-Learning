@@ -1,0 +1,39 @@
+--- 
+title: "Aesthetic Lifestyle Learning"
+author: "Jeff Cromwell, PhD"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+A book about Aesthetic Lifestyle Learning and artificial intelligence.:
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# Forward
+
+Topics in this book include:
+1. artificial intelligence decision support
+2. aesthetics and beauty
+3. healthy lifestyle choices
+4. leisure lifestyle
+5. mind and body
+6. multiple intelligences
+7. linquistic communication
+8. learning styles
+9. myers briggs personality and  polymath
+10. Medical Devices and decision support
+
+Individual rows in each of the HTML widgets are titles and IDs from the Pubmed database arranged by the above topics in this digital book format. Pubmed. (2022, May 2).Pubmed User Guid. https://pubmed.ncbi.nlm.nih.gov/help/.
+
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

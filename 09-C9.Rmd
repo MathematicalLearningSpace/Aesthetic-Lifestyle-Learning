@@ -1,0 +1,25 @@
+# Myers Briggs Personality and the Polymath
+
+## Myers-Brigg Personality
+
+```{r tab9, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-myersbrigg-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```
+
+## Polymath
+
+```{r tab9A, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-polymath-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```

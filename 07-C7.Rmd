@@ -1,0 +1,12 @@
+# Linquistic Communication
+
+
+```{r tab7, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-linquistic-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
