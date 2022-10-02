@@ -1,0 +1,235 @@
+--- 
+title: "Aesthetic Lifestyle Learning"
+author: "Jeff Cromwell, PhD"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+description: |
+A book about Aesthetic Lifestyle Learning and artificial intelligence.:
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# Forward
+
+Topics in this book include:
+1. artificial intelligence decision support
+2. aesthetics and beauty
+3. healthy lifestyle choices
+4. leisure lifestyle
+5. mind and body
+6. multiple intelligences
+7. linquistic communication
+8. learning styles
+9. myers briggs personality and polymath
+10. Medical Devices and decision support
+
+Individual rows in each of the HTML widgets are titles and IDs from the Pubmed database arranged by the above topics in this digital book format. Pubmed. (2022, May 2).Pubmed User Guid. https://pubmed.ncbi.nlm.nih.gov/help/.
+
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Artificial Intelligence Decision Support
+
+
+```{r tab1, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-artificial-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+
+<!--chapter:end:01-C1.Rmd-->
+
+# Aesthetics and Beauty
+
+
+
+
+```{r tab2, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-aesthetics-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+
+<!--chapter:end:02-C2.Rmd-->
+
+# Healthy Lifestyle Choices
+
+
+
+
+```{r tab3, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-healthylif-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:03-C3.Rmd-->
+
+# Leisure Lifestyle
+
+
+
+
+```{r tab4, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-leisurelif-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:04-C4.Rmd-->
+
+# Mind and Body
+
+
+```{r tab5, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-mindbody-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:05-C5.Rmd-->
+
+# Multiple Intelligences
+
+
+
+```{r tab6, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-multiplein-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:06-C6.Rmd-->
+
+# Linquistic Communication
+
+
+```{r tab7, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-linquistic-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:07-C7.Rmd-->
+
+# Learning Styles
+
+
+```{r tab8, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-learningst-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 25))
+```
+
+<!--chapter:end:08-C8.Rmd-->
+
+# Myers Briggs Personality and the Polymath
+
+## Myers-Brigg Personality
+
+```{r tab9, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-myersbrigg-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```
+
+## Polymath
+
+```{r tab9A, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-polymath-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```
+
+<!--chapter:end:09-C9.Rmd-->
+
+# Medical Devices and Artificial Intelligence
+
+
+## Medical Devices
+
+```{r tab10, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-medicaldev-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```
+
+
+
+## Artificial Intelligence
+
+```{r tab10A, tidy=FALSE,echo=FALSE}
+library(DT)
+
+df1<-as.data.frame(read.csv("./data/csv-artificial-set.csv"))
+matchingList <- c("ï..PMID", "Title")
+df2 <- df1[, which((names(df1) %in% matchingList)==TRUE)]
+df3<-head(df2,4000)
+datatable(df3, options = list(pageLength = 12))
+```
+
+<!--chapter:end:10-C10.Rmd-->
+
+# Conclusion
+
+
+Please visit the Mathematical Learning Space Research Portfolio for additional books at mathlearningspace.weebly.com and the instagram page at mathmusicbiology. 
+
+<!--chapter:end:11-C11.Rmd-->
+
